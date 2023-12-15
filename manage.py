@@ -11,6 +11,8 @@ def main():
     else:
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.production')
 
+    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.base')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
