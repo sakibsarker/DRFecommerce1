@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,15 +54,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'app.wsgi.application'
 
 
-DATABASES = {
-    'default': {
-         'ENGINE':os.getenv('ENGINE'),
-        'NAME':os.getenv('NAME'),
-        'USER':os.getenv('USER'),
-        'PASSWORD':os.getenv('PASSWORD'),
-        'HOST':os.getenv('HOST'),   
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE':os.getenv('ENGINE'),
+#         'NAME':os.getenv('NAME'),
+#         'USER':os.getenv('USER'),
+#         'PASSWORD':os.getenv('PASSWORD'),
+#         'HOST':os.getenv('HOST'),   
+#     }
+# }
 
 
 # Password validation
