@@ -8,7 +8,7 @@ class Category(MPTTModel):
     level = models.PositiveIntegerField(default=0)
     lft = models.PositiveIntegerField(default=0)
     rght = models.PositiveIntegerField(default=0)
-    tree_id = models.PositiveIntegerField(default=1)
+    tree_id = models.PositiveIntegerField(default=0)
     
     class MPTTMeta:
         order_insertion_by=["name"]

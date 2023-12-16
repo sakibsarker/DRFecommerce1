@@ -6,12 +6,12 @@ from app.settings import base
 
 def main():
     """Run administrative tasks."""
-    if base.DEBUG:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.local')
-    else:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.production')
+    # if base.DEBUG:
+    #     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.local')
+    # else:
+    #     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.production')
 
-    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.base')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings.base')
 
     try:
         from django.core.management import execute_from_command_line
