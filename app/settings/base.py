@@ -117,8 +117,4 @@ REST_FRAMEWORK={
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'DRF',
-    'DESCRIPTION': 'Ecommerce Rest Api',
-    'VERSION': '1.0.0',
-  
-    # OTHER SETTINGS
 }
