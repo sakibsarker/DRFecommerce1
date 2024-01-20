@@ -17,3 +17,5 @@ dist-ssr
 *.sw?
 .env
 .env/*
+schema.yml
+*schema.yml
